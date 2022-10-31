@@ -3,20 +3,20 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo installing npm and nodejs............
+      - echo "installing npm and nodejs............"
       - apt install npm
       - apt install nodejs
 
   pre_build:
     commands:
-      - echo pre build step running...............
+      - echo "pre build step running..............."
       - npm install
 
   build:
     commands:
-      - echo build step.........
+      - echo "build step........."
       - npm run build
-      - echo build step done.......
+      - echo "build step done......."
 
 artifacts:
   files:
