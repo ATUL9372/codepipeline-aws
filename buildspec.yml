@@ -20,7 +20,6 @@ phases:
 artifacts:
   files:
     - "**/*"
-  discard-paths: no
-  base-directory: dist
+  name: my-react-website$(date +%Y-%m-%d)
 
   
