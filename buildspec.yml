@@ -4,8 +4,7 @@ phases:
   install:
     commands:
       - echo "installing npm and nodejs............"
-      - apt install npm
-      - apt install nodejs
+      - curl -fsSL https://deb.nodesource.com/setup_19.x | sudo -E bash - && apt-get install -y nodejs
 
   pre_build:
     commands:
