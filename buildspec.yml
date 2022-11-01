@@ -20,6 +20,7 @@ phases:
 artifacts:
   files:
     - "**/*"
-  name: my-react-website$(date +%Y-%m-%d)
+  discard-paths: yes
+  base-direcory: build
 
   
