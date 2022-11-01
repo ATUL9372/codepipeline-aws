@@ -19,8 +19,7 @@ phases:
 
 artifacts:
   files:
-    - "**/*"
-  discard-paths: yes
-  base-direcory: build
+    - "build/*"
+  name: only-build-files$(date +%Y-%m-%d) 
 
   
